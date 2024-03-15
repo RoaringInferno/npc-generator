@@ -1,0 +1,70 @@
+[
+    {
+        "choice": "Alchemist",
+        "tools": "Alchemist's supplies"
+    },
+    {
+        "choice": "Brewer",
+        "tools": "Brewer's supplies"
+    },
+    {
+        "choice": "Calligrapher",
+        "tools": "Calligrapher's supplies"
+    },
+    {
+        "choice": "Carpenter",
+        "tools": "Carpenter's tools"
+    },
+    {
+        "choice": "Cartographer",
+        "tools": "Cartographer's tools"
+    },
+    {
+        "choice": "Cobbler",
+        "tools": "Cobbler's tools"
+    },
+    {
+        "choice": "Cook",
+        "tools": "Cook's utensils"
+    },
+    {
+        "choice": "Glassblower",
+        "tools": "Glassblower's tools"
+    },
+    {
+        "choice": "Jeweler",
+        "tools": "Jeweler's tools"
+    },
+    {
+        "choice": "Leatherworker",
+        "tools": "Leatherworker's tools"
+    },
+    {
+        "choice": "Mason",
+        "tools": "Mason's tools"
+    },
+    {
+        "choice": "Painter",
+        "tools": "Painter's supplies"
+    },
+    {
+        "choice": "Potter",
+        "tools": "Potter's tools"
+    },
+    {
+        "choice": "Smith",
+        "tools": "Smith's tools"
+    },
+    {
+        "choice": "Tinker",
+        "tools": "Tinker's tools"
+    },
+    {
+        "choice": "Weaver",
+        "tools": "Weaver's tools"
+    },
+    {
+        "choice": "Woodcarver",
+        "tools": "Woodcarver's tools"
+    }
+]

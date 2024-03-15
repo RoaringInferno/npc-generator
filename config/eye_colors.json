@@ -1,0 +1,22 @@
+[
+    {
+        "choice": "Blue",
+        "weight": 27
+    },
+    {
+        "choice": "Brown",
+        "weight": 45
+    },
+    {
+        "choice": "Gray",
+        "weight": 1
+    },
+    {
+        "choice": "Green",
+        "weight": 9
+    },
+    {
+        "choice": "Hazel",
+        "weight": 18
+    }
+]

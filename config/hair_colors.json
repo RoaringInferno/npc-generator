@@ -1,0 +1,26 @@
+[
+    {
+        "choice": "Black",
+        "weight": 20
+    },
+    {
+        "choice": "Blonde",
+        "weight": 15
+    },
+    {
+        "choice": "Brown",
+        "weight": 30
+    },
+    {
+        "choice": "Gray",
+        "weight": 5
+    },
+    {
+        "choice": "Ginger",
+        "weight": 10
+    },
+    {
+        "choice": "White",
+        "weight": 20
+    }
+]

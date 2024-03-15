@@ -1,0 +1,27 @@
+{
+    "path": "output.csv",
+    "header": [
+        "Race",
+        "Subrace",
+        "Age",
+        "Height",
+        "Weight",
+        "Eye Color",
+        "Hair Color",
+        "Gender",
+        "First Name",
+        "Last Name",
+        "Lawfulness",
+        "Kindness",
+        "Profession",
+        "Tool Proficiency",
+        "Strength",
+        "Dexterity",
+        "Constitution",
+        "Intelligence",
+        "Wisdom",
+        "Charisma",
+        "Class",
+        "Subclass"
+    ]
+}
