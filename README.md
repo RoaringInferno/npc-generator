@@ -12,3 +12,6 @@ https://www.reddit.com/user/OrkishBlade/
 at
 https://www.reddit.com/r/DnDBehindTheScreen/comments/50pcg1/a_post_about_names_names_for_speakers_of_the/
 , for the names in ```names/```.
+
+## Release Compile Command
+```pkg npc_generator.js -o npc_generator --targets node14-macos-arm64,node14-macos-x64,node14-linux-x64,node14-win-x64```
