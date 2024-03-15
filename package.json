@@ -1,0 +1,18 @@
+{
+    "name": "npc_generator",
+    "version": "1.0.0",
+    "description": "A tool to create bulk NPCs for your D&D game.",
+    "main": "npc_generator.js",
+    "scripts": {
+        "start": "node npc_generator.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "csv-writer": "^1.6.0",
+        "fs": "^0.0.1-security"
+    },
+    "bin": {
+        "npc-generator": "npc_generator.js"
+    }
+}

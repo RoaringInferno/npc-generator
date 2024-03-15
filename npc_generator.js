@@ -1,5 +1,4 @@
 const createObjectCsvWriter = require('csv-writer').createObjectCsvWriter;
-import('random');
 const fs = require('fs');
 
 // Data
