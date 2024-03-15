@@ -80,31 +80,32 @@ function rollForStats() {
 function generate(num) {
     const csvWriter = createObjectCsvWriter(output);
 
-    records = [];
-    records.push({
-        Race: "Race",
-        Subrace: "Subrace",
-        Age: "Age",
-        Height: "Height",
-        Weight: "Weight",
-        "Eye Color": "Eye Color",
-        "Hair Color": "Hair Color",
-        Gender: "Gender",
-        "First Name": "First Name",
-        "Last Name": "Last Name",
-        Lawfulness: "Lawfulness",
-        Kindness: "Kindness",
-        Profession: "Profession",
-        "Tool Proficiency": "Tool Proficiency",
-        Strength: "Strength",
-        Dexterity: "Dexterity",
-        Constitution: "Constitution",
-        Intelligence: "Intelligence",
-        Wisdom: "Wisdom",
-        Charisma: "Charisma",
-        Class: "Class",
-        Subclass: "Subclass"
-    });
+    records = [
+        {
+            Race: "Race",
+            Subrace: "Subrace",
+            Age: "Age",
+            Height: "Height",
+            Weight: "Weight",
+            "Eye Color": "Eye Color",
+            "Hair Color": "Hair Color",
+            Gender: "Gender",
+            "First Name": "First Name",
+            "Last Name": "Last Name",
+            Lawfulness: "Lawfulness",
+            Kindness: "Kindness",
+            Profession: "Profession",
+            "Tool Proficiency": "Tool Proficiency",
+            Strength: "Strength",
+            Dexterity: "Dexterity",
+            Constitution: "Constitution",
+            Intelligence: "Intelligence",
+            Wisdom: "Wisdom",
+            Charisma: "Charisma",
+            Class: "Class",
+            Subclass: "Subclass"
+        }
+    ];
     for (let i = 0; i < num; i++) {
         // Select Race
         const race = weightedrandom(races);
@@ -179,30 +180,32 @@ function generate(num) {
         const profession = weightedrandom(professions);
             
         // Add record to CSV
-        records.push({
-            Race: race.choice,
-            Subrace: subrace.choice,
-            Age: age + " yrs",
-            Height: height_string,
-            Weight: weight + " lbs",
-            'Eye Color': eye_color.choice,
-            'Hair Color': hair_color.choice,
-            Gender: gender,
-            "First Name": first_name,
-            "Last Name": last_name,
-            Lawfulness: lawfulness,
-            Kindness: kindness,
-            Strength: ability_scores[0] - 2,
-            Dexterity: ability_scores[1] - 2,
-            Constitution: ability_scores[2] - 2,
-            Intelligence: ability_scores[3] - 2,
-            Wisdom: ability_scores[4] - 2,
-            Charisma: ability_scores[5] - 2,
-            Class: class_choice.choice,
-            Subclass: subclass_choice.choice,
-            Profession: profession.choice,
-            'Tool Proficiency': profession.tools
-        });
+        records.push(
+            {
+                Race: race.choice,
+                Subrace: subrace.choice,
+                Age: age + " yrs",
+                Height: height_string,
+                Weight: weight + " lbs",
+                'Eye Color': eye_color.choice,
+                'Hair Color': hair_color.choice,
+                Gender: gender,
+                "First Name": first_name,
+                "Last Name": last_name,
+                Lawfulness: lawfulness,
+                Kindness: kindness,
+                Strength: ability_scores[0] - 2,
+                Dexterity: ability_scores[1] - 2,
+                Constitution: ability_scores[2] - 2,
+                Intelligence: ability_scores[3] - 2,
+                Wisdom: ability_scores[4] - 2,
+                Charisma: ability_scores[5] - 2,
+                Class: class_choice.choice,
+                Subclass: subclass_choice.choice,
+                Profession: profession.choice,
+                'Tool Proficiency': profession.tools
+            }
+        );
     }
 
     csvWriter.writeRecords(records)
