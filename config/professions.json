@@ -1,70 +1,87 @@
 [
     {
         "choice": "Alchemist",
+        "weight": 1,
         "tools": "Alchemist's supplies"
     },
     {
         "choice": "Brewer",
+        "weight": 2,
         "tools": "Brewer's supplies"
     },
     {
         "choice": "Calligrapher",
+        "weight": 1,
         "tools": "Calligrapher's supplies"
     },
     {
         "choice": "Carpenter",
+        "weight": 3,
         "tools": "Carpenter's tools"
     },
     {
         "choice": "Cartographer",
+        "weight": 1,
         "tools": "Cartographer's tools"
     },
     {
         "choice": "Cobbler",
+        "weight": 3,
         "tools": "Cobbler's tools"
     },
     {
         "choice": "Cook",
+        "weight": 3,
         "tools": "Cook's utensils"
     },
     {
         "choice": "Glassblower",
+        "weight": 1,
         "tools": "Glassblower's tools"
     },
     {
         "choice": "Jeweler",
+        "weight": 1,
         "tools": "Jeweler's tools"
     },
     {
         "choice": "Leatherworker",
+        "weight": 3,
         "tools": "Leatherworker's tools"
     },
     {
         "choice": "Mason",
+        "weight": 4,
         "tools": "Mason's tools"
     },
     {
         "choice": "Painter",
+        "weight": 1,
         "tools": "Painter's supplies"
     },
     {
         "choice": "Potter",
+        "weight": 2,
         "tools": "Potter's tools"
     },
     {
         "choice": "Smith",
+        "weight": 3,
         "tools": "Smith's tools"
     },
     {
         "choice": "Tinker",
+        "weight": 1,
         "tools": "Tinker's tools"
     },
     {
         "choice": "Weaver",
+        "weight": 3,
         "tools": "Weaver's tools"
     },
     {
         "choice": "Woodcarver",
+        "weight": 2,
         "tools": "Woodcarver's tools"
     }
 ]

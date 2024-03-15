@@ -176,7 +176,7 @@ function generate(num) {
         const subclass_choice = weightedrandom(class_choice.subclasses);
 
         // Select Profession
-        const profession = unweightedrandom(professions);
+        const profession = weightedrandom(professions);
             
         // Add record to CSV
         records.push({
