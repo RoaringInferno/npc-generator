@@ -1,6 +1,5 @@
 const createObjectCsvWriter = require('csv-writer').createObjectCsvWriter;
 import('random');
-const readline = require('readline');
 const fs = require('fs');
 
 // Data
@@ -10,7 +9,6 @@ const eye_colors = require('./config/eye_colors.json');
 const hair_colors = require('./config/hair_colors.json');
 const classes = require('./config/classes.json');
 const professions = require('./config/professions.json');
-const { exit } = require('process');
 
 // Helper functions
 function normal(mean, stdDev) {
@@ -18,7 +16,6 @@ function normal(mean, stdDev) {
     const u2 = Math.random();
     
     const z0 = Math.sqrt(-2.0 * Math.log(u1)) * Math.cos(2.0 * Math.PI * u2);
-    const z1 = Math.sqrt(-2.0 * Math.log(u1)) * Math.sin(2.0 * Math.PI * u2);
     
     return z0 * stdDev + mean;
 }
