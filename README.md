@@ -2,7 +2,7 @@
 A tool to create bulk NPCs for your D&amp;D game.
 
 # Usage
-```node npc_generator.js <count>```. ```<count``` represents the number of NPCs to generate, 1000 by default.
+```node npc_generator.js <count>```. ```<count>``` represents the number of NPCs to generate, 1000 by default.
 
 # Configuration
 Change the values in ```config/``` to change race, subrace, class, subclass, physical attribute, and profession percentages.
