@@ -1,0 +1,85 @@
+{
+    "subraces": [
+        {
+            "choice": "Black",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Blue",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Brass",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Bronze",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Copper",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Gold",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Green",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Red",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "Silver",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        },
+        {
+            "choice": "White",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        }
+    ],
+    "age": [18, 200],
+    "height": [68, 82],
+    "weights": [179, 367],
+    "alignment": [
+        [1, 1],
+        [3, 1]
+    ],
+    "name_file": "southron",
+    "ability_scores": [
+        2, 0, 0, 0, 0, 1
+    ]
+}

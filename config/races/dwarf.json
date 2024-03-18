@@ -1,0 +1,29 @@
+{
+    "subraces": [
+        {
+            "choice": "Hill",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 1, 0
+            ]
+        },
+        {
+            "choice": "Mountain",
+            "weight": 1,
+            "ability_scores": [
+                2, 0, 0, 0, 0, 0
+            ]
+        }
+    ],
+    "age": [18, 200],
+    "height": [46, 52],
+    "weights": [119, 226],
+    "alignment": [
+        [2, 1],
+        [2, 1]
+    ],
+    "name_file": "archaic",
+    "ability_scores": [
+        0, 0, 2, 0, 0, 0
+    ]
+}

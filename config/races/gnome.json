@@ -1,0 +1,29 @@
+{
+    "subraces": [
+        {
+            "choice": "Forest",
+            "weight": 1,
+            "ability_scores": [
+                0, 1, 0, 0, 0, 0
+            ]
+        }, 
+        {
+            "choice": "Rock",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 1, 0, 0, 0
+            ]
+        }
+    ],
+    "age": [20, 200],
+    "height": [37, 43],
+    "weights": [37, 43],
+    "alignment": [
+        [1, 1],
+        [2, 1]
+    ],
+    "name_file": "northish",
+    "ability_scores": [
+        0, 0, 0, 2, 0, 0
+    ]
+}
