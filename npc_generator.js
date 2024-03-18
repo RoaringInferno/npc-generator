@@ -104,7 +104,8 @@ function generate(num) {
     ];
     for (let i = 0; i < num; i++) {
         // Select Race
-        const race = weightedrandom(races);
+        const race_choice = weightedrandom(races);
+        const race = require("./config/races/" + race_choice.file + ".json");
 
         //console.log(race); // debug_print
 
@@ -178,7 +179,7 @@ function generate(num) {
         // Add record to CSV
         records.push(
             {
-                Race: race.choice,
+                Race: race_choice.choice,
                 Subrace: subrace.choice,
                 Age: age + " yrs",
                 Height: height_string,

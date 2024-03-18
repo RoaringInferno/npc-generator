@@ -1,0 +1,22 @@
+{
+    "subraces": [
+        {
+            "choice": "",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        }
+    ],
+    "age": [14, 60],
+    "height": [60, 78],
+    "weights": [114, 380],
+    "alignment": [
+        [1, 2],
+        [2, 3]
+    ],
+    "name_file": "southron",
+    "ability_scores": [
+        2, 0, 1, 0, 0, 0
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "subraces": [
+        {
+            "choice": "High",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        }, 
+        {
+            "choice": "Wood",
+            "weight": 1,
+            "ability_scores": [
+                0, 0, 0, 0, 0, 0
+            ]
+        }
+    ],
+    "age": [20, 150],
+    "height": [59, 73],
+    "weights": [114, 238],
+    "alignment": [
+        [1, 2],
+        [1, 1]
+    ],
+    "name_file": "westron",
+    "ability_scores": [
+        0, 1, 0, 0, 1, 2
+    ]
+}
