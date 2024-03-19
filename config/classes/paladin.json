@@ -1,0 +1,32 @@
+{
+    "subclasses": [
+        {
+            "choice": "Oath of the Ancients",
+            "weight": 1
+        },
+        {
+            "choice": "Oath of Conquest",
+            "weight": 2
+        },
+        {
+            "choice": "Oath of Devotion",
+            "weight": 3
+        },
+        {
+            "choice": "Oath of Redemption",
+            "weight": 1
+        },
+        {
+            "choice": "Oath of the Crown",
+            "weight": 2
+        },
+        {
+            "choice": "Oath of the Watchers",
+            "weight": 1
+        },
+        {
+            "choice": "Oath of Vengeance",
+            "weight": 3
+        }
+    ]
+}

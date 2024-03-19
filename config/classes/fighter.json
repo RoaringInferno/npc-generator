@@ -1,0 +1,32 @@
+{
+    "subclasses": [
+        {
+            "choice": "Arcane Archer",
+            "weight": 1
+        },
+        {
+            "choice": "Battle Master",
+            "weight": 3
+        },
+        {
+            "choice": "Cavalier",
+            "weight": 1
+        },
+        {
+            "choice": "Champion",
+            "weight": 4
+        },
+        {
+            "choice": "Eldritch Knight",
+            "weight": 1
+        },
+        {
+            "choice": "Rune Knight",
+            "weight": 1
+        },
+        {
+            "choice": "Samurai",
+            "weight": 1
+        }
+    ]
+}

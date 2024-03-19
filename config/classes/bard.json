@@ -1,0 +1,32 @@
+{
+    "subclasses": [
+        {
+            "choice": "College of Creation",
+            "weight": 1
+        },
+        {
+            "choice": "College of Eloquence",
+            "weight": 2
+        },
+        {
+            "choice": "College of Glamour",
+            "weight": 1
+        },
+        {
+            "choice": "College of Lore",
+            "weight": 3
+        },
+        {
+            "choice": "College of Swords",
+            "weight": 2
+        },
+        {
+            "choice": "College of Valor",
+            "weight": 2
+        },
+        {
+            "choice": "College of Whispers",
+            "weight": 1
+        }
+    ]
+}

@@ -5,36 +5,7 @@
             3, 1, 2, 0, 0, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Path of the Ancestral Guardian",
-                "weight": 1
-            },
-            {
-                "choice": "Path of the Beast",
-                "weight": 1
-            },
-            {
-                "choice": "Path of the Berserker",
-                "weight": 3
-            },
-            {
-                "choice": "Path of the Storm Herald",
-                "weight": 1
-            },
-            {
-                "choice": "Path of the Totem Warrior",
-                "weight": 3
-            },
-            {
-                "choice": "Path of Wild Magic",
-                "weight": 2
-            },
-            {
-                "choice": "Path of the Zealot",
-                "weight": 1
-            }
-        ]
+        "file": "barbarian"
     },
     {
         "choice": "Bard",
@@ -42,36 +13,7 @@
             0, 1, 0, 0, 0, 3
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "College of Creation",
-                "weight": 1
-            },
-            {
-                "choice": "College of Eloquence",
-                "weight": 2
-            },
-            {
-                "choice": "College of Glamour",
-                "weight": 1
-            },
-            {
-                "choice": "College of Lore",
-                "weight": 3
-            },
-            {
-                "choice": "College of Swords",
-                "weight": 2
-            },
-            {
-                "choice": "College of Valor",
-                "weight": 2
-            },
-            {
-                "choice": "College of Whispers",
-                "weight": 1
-            }
-        ]
+        "file": "bard"
     },
     {
         "choice": "Cleric",
@@ -79,64 +21,7 @@
             1, 0, 0, 0, 3, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Arcana Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Death Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Forge Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Grave Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Knowledge Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Life Domain",
-                "weight": 3
-            },
-            {
-                "choice": "Light Domain",
-                "weight": 3
-            },
-            {
-                "choice": "Nature Domain",
-                "weight": 3
-            },
-            {
-                "choice": "Order Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Peace Domain",
-                "weight": 3
-            },
-            {
-                "choice": "Tempest Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Trickery Domain",
-                "weight": 1
-            },
-            {
-                "choice": "Twilight Domain",
-                "weight": 1
-            },
-            {
-                "choice": "War Domain",
-                "weight": 1
-            }
-        ]
+        "file": "cleric"
     },
     {
         "choice": "Druid",
@@ -144,32 +29,7 @@
             0, 0, 0, 0, 3, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Circle of Dreams",
-                "weight": 1
-            },
-            {
-                "choice": "Circle of the Land",
-                "weight": 2
-            },
-            {
-                "choice": "Circle of the Moon",
-                "weight": 2
-            },
-            {
-                "choice": "Circle of the Shepherd",
-                "weight": 2
-            },
-            {
-                "choice": "Circle of Spores",
-                "weight": 1
-            },
-            {
-                "choice": "Circle of Stars",
-                "weight": 1
-            }
-        ]
+        "file": "druid"
     },
     {
         "choice": "Fighter",
@@ -177,36 +37,7 @@
             2, 2, 2, 0, 0, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Arcane Archer",
-                "weight": 1
-            },
-            {
-                "choice": "Battle Master",
-                "weight": 3
-            },
-            {
-                "choice": "Cavalier",
-                "weight": 1
-            },
-            {
-                "choice": "Champion",
-                "weight": 4
-            },
-            {
-                "choice": "Eldritch Knight",
-                "weight": 1
-            },
-            {
-                "choice": "Rune Knight",
-                "weight": 1
-            },
-            {
-                "choice": "Samurai",
-                "weight": 1
-            }
-        ]
+        "file": "fighter"
     },
     {
         "choice": "Monk",
@@ -214,44 +45,7 @@
             0, 3, 0, 0, 3, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Way of Mercy",
-                "weight": 2
-            },
-            {
-                "choice": "Way of the Astral Self",
-                "weight": 1
-            },
-            {
-                "choice": "Way of the Drunken Master",
-                "weight": 2
-            },
-            {
-                "choice": "Way of the Four Elements",
-                "weight": 1
-            },
-            {
-                "choice": "Way of the Kensei",
-                "weight": 3
-            },
-            {
-                "choice": "Way of the Long Death",
-                "weight": 1
-            },
-            {
-                "choice": "Way of the Open Hand",
-                "weight": 3
-            },
-            {
-                "choice": "Way of the Shadow",
-                "weight": 2
-            },
-            {
-                "choice": "Way of the Sun Soul",
-                "weight": 1
-            }
-        ]
+        "file": "monk"
     },
     {
         "choice": "Paladin",
@@ -259,36 +53,7 @@
             2, 0, 1, 0, 0, 3
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Oath of the Ancients",
-                "weight": 1
-            },
-            {
-                "choice": "Oath of Conquest",
-                "weight": 2
-            },
-            {
-                "choice": "Oath of Devotion",
-                "weight": 3
-            },
-            {
-                "choice": "Oath of Redemption",
-                "weight": 1
-            },
-            {
-                "choice": "Oath of the Crown",
-                "weight": 2
-            },
-            {
-                "choice": "Oath of the Watchers",
-                "weight": 1
-            },
-            {
-                "choice": "Oath of Vengeance",
-                "weight": 3
-            }
-        ]
+        "file": "paladin"
     },
     {
         "choice": "Ranger",
@@ -296,32 +61,7 @@
             0, 2, 0, 0, 3, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Beast Master",
-                "weight": 3
-            },
-            {
-                "choice": "Gloom Stalker",
-                "weight": 1
-            },
-            {
-                "choice": "Horizon Walker",
-                "weight": 1
-            },
-            {
-                "choice": "Hunter",
-                "weight": 3
-            },
-            {
-                "choice": "Monster Slayer",
-                "weight": 2
-            },
-            {
-                "choice": "Swarmkeeper",
-                "weight": 1
-            }
-        ]
+        "file": "ranger"
     },
     {
         "choice": "Rogue",
@@ -329,40 +69,7 @@
             0, 4, 0, 0, 0, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Arcane Trickster",
-                "weight": 1
-            },
-            {
-                "choice": "Assassin",
-                "weight": 3
-            },
-            {
-                "choice": "Inquisitive",
-                "weight": 2
-            },
-            {
-                "choice": "Mastermind",
-                "weight": 1
-            },
-            {
-                "choice": "Phantom",
-                "weight": 1
-            },
-            {
-                "choice": "Scout",
-                "weight": 2
-            },
-            {
-                "choice": "Swashbuckler",
-                "weight": 2
-            },
-            {
-                "choice": "Thief",
-                "weight": 3
-            }
-        ]
+        "file": "rogue"
     },
     {
         "choice": "Sorcerer",
@@ -370,36 +77,7 @@
             0, 0, 0, 0, 0, 4
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Aberrant Mind",
-                "weight": 1
-            },
-            {
-                "choice": "Clockwork Soul",
-                "weight": 1
-            },
-            {
-                "choice": "Divine Soul",
-                "weight": 1
-            },
-            {
-                "choice": "Draconic Bloodline",
-                "weight": 3
-            },
-            {
-                "choice": "Shadow Magic",
-                "weight": 1
-            },
-            {
-                "choice": "Storm Sorcery",
-                "weight": 1
-            },
-            {
-                "choice": "Wild Magic",
-                "weight": 3
-            }
-        ]
+        "file": "sorcerer"
     },
     {
         "choice": "Warlock",
@@ -407,40 +85,7 @@
             0, 0, 0, 0, 0, 4
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "The Archfey",
-                "weight": 1
-            },
-            {
-                "choice": "The Celestial",
-                "weight": 1
-            },
-            {
-                "choice": "The Fathomless",
-                "weight": 1
-            },
-            {
-                "choice": "The Fiend",
-                "weight": 3
-            },
-            {
-                "choice": "The Genie",
-                "weight": 1
-            },
-            {
-                "choice": "The Great Old One",
-                "weight": 2
-            },
-            {
-                "choice": "The Hexblade",
-                "weight": 1
-            },
-            {
-                "choice": "The Undying",
-                "weight": 2
-            }
-        ]
+        "file": "warlock"
     },
     {
         "choice": "Wizard",
@@ -448,47 +93,6 @@
             0, 0, 0, 4, 0, 0
         ],
         "weight": 0,
-        "subclasses": [
-            {
-                "choice": "Order of Scribes",
-                "weight": 1
-            },
-            {
-                "choice": "School of Abjuration",
-                "weight": 3
-            },
-            {
-                "choice": "School of Conjuration",
-                "weight": 2
-            },
-            {
-                "choice": "School of Divination",
-                "weight": 3
-            },
-            {
-                "choice": "School of Enchantment",
-                "weight": 2
-            },
-            {
-                "choice": "School of Evocation",
-                "weight": 3
-            },
-            {
-                "choice": "School of Illusion",
-                "weight": 2
-            },
-            {
-                "choice": "School of Necromancy",
-                "weight": 2
-            },
-            {
-                "choice": "School of Transmutation",
-                "weight": 2
-            },
-            {
-                "choice": "War Magic",
-                "weight": 1
-            }
-        ]
+        "file": "wizard"
     }
 ]

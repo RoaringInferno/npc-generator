@@ -167,11 +167,12 @@ function generate(num) {
             c.weight = Math.max(c.weight, 1);
         }
         const class_choice = weightedrandom(classes);
+        const pclass = require("./config/classes/" + class_choice.file + ".json");
 
         //console.log(class_choice); // debug_print
 
         //     Select Subclass
-        const subclass_choice = weightedrandom(class_choice.subclasses);
+        const subclass_choice = weightedrandom(pclass.subclasses);
 
         // Select Profession
         const profession = weightedrandom(professions);

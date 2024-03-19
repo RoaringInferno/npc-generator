@@ -1,0 +1,28 @@
+{
+    "subclasses": [
+        {
+            "choice": "Circle of Dreams",
+            "weight": 1
+        },
+        {
+            "choice": "Circle of the Land",
+            "weight": 2
+        },
+        {
+            "choice": "Circle of the Moon",
+            "weight": 2
+        },
+        {
+            "choice": "Circle of the Shepherd",
+            "weight": 2
+        },
+        {
+            "choice": "Circle of Spores",
+            "weight": 1
+        },
+        {
+            "choice": "Circle of Stars",
+            "weight": 1
+        }
+    ]
+}

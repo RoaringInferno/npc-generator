@@ -1,0 +1,60 @@
+{
+    "subclasses": [
+        {
+            "choice": "Arcana Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Death Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Forge Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Grave Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Knowledge Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Life Domain",
+            "weight": 3
+        },
+        {
+            "choice": "Light Domain",
+            "weight": 3
+        },
+        {
+            "choice": "Nature Domain",
+            "weight": 3
+        },
+        {
+            "choice": "Order Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Peace Domain",
+            "weight": 3
+        },
+        {
+            "choice": "Tempest Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Trickery Domain",
+            "weight": 1
+        },
+        {
+            "choice": "Twilight Domain",
+            "weight": 1
+        },
+        {
+            "choice": "War Domain",
+            "weight": 1
+        }
+    ]
+}
