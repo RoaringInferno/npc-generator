@@ -71,37 +71,30 @@ function rollForStats() {
     return sum;
 }
 
+function getModifier(score) {
+    return Math.floor((score - 10) / 2);
+}
+function getModifierForDisplay(score) {
+    const modifier = Math.floor((score - 10) / 2);
+    if (modifier > 0) {
+        return "+" + modifier;
+    } else if (modifier < 0) {
+        return modifier.toString();
+    } else {
+        return "+0";
+    }
+}
+
+function rollDie(size) {
+    return Math.floor(Math.random() * size) + 1;
+}
+
 
 // Generate NPC data
 function generate(num) {
-    const csvWriter = createObjectCsvWriter(output);
+    const csvWriter = createObjectCsvWriter(output.csv);
 
-    records = [
-        {
-            Race: "Race",
-            Subrace: "Subrace",
-            Age: "Age",
-            Height: "Height",
-            Weight: "Weight",
-            "Eye Color": "Eye Color",
-            "Hair Color": "Hair Color",
-            Gender: "Gender",
-            "First Name": "First Name",
-            "Last Name": "Last Name",
-            Lawfulness: "Lawfulness",
-            Kindness: "Kindness",
-            Profession: "Profession",
-            "Tool Proficiency": "Tool Proficiency",
-            Strength: "Strength",
-            Dexterity: "Dexterity",
-            Constitution: "Constitution",
-            Intelligence: "Intelligence",
-            Wisdom: "Wisdom",
-            Charisma: "Charisma",
-            Class: "Class",
-            Subclass: "Subclass"
-        }
-    ];
+    records = [output.header];
     for (let i = 0; i < num; i++) {
         // Select Race
         const race_choice = weightedrandom(races);
@@ -167,11 +160,12 @@ function generate(num) {
             c.weight = Math.max(c.weight, 1);
         }
         const class_choice = weightedrandom(classes);
+        const pclass = require("./config/classes/" + class_choice.file + ".json");
 
         //console.log(class_choice); // debug_print
 
         //     Select Subclass
-        const subclass_choice = weightedrandom(class_choice.subclasses);
+        const subclass_choice = weightedrandom(pclass.subclasses);
 
         // Select Profession
         const profession = weightedrandom(professions);
@@ -181,9 +175,9 @@ function generate(num) {
             {
                 Race: race_choice.choice,
                 Subrace: subrace.choice,
-                Age: age + " yrs",
+                Age: age.toString() + " yrs",
                 Height: height_string,
-                Weight: weight + " lbs",
+                Weight: weight.toString() + " lbs",
                 'Eye Color': eye_color.choice,
                 'Hair Color': hair_color.choice,
                 Gender: gender,
@@ -191,16 +185,17 @@ function generate(num) {
                 "Last Name": last_name,
                 Lawfulness: lawfulness,
                 Kindness: kindness,
-                Strength: ability_scores[0] - 2,
-                Dexterity: ability_scores[1] - 2,
-                Constitution: ability_scores[2] - 2,
-                Intelligence: ability_scores[3] - 2,
-                Wisdom: ability_scores[4] - 2,
-                Charisma: ability_scores[5] - 2,
+                Strength: (ability_scores[0] - 2).toString() + " (" + getModifierForDisplay(ability_scores[0]) + ")",
+                Dexterity: (ability_scores[1] - 2).toString() + " (" + getModifierForDisplay(ability_scores[1]) + ")",
+                Constitution: (ability_scores[2] - 2).toString() + " (" + getModifierForDisplay(ability_scores[2]) + ")",
+                Intelligence: (ability_scores[3] - 2).toString() + " (" + getModifierForDisplay(ability_scores[3]) + ")",
+                Wisdom: (ability_scores[4] - 2).toString() + " (" + getModifierForDisplay(ability_scores[4]) + ")",
+                Charisma: (ability_scores[5] - 2).toString() + " (" + getModifierForDisplay(ability_scores[5]) + ")",
                 Class: class_choice.choice,
                 Subclass: subclass_choice.choice,
                 Profession: profession.choice,
-                'Tool Proficiency': profession.tools
+                'Tool Proficiency': profession.tools,
+                'Hit Points': rollDie(pclass.hit_die) + getModifier(ability_scores[2]),
             }
         );
     }

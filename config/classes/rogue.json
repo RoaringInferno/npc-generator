@@ -1,0 +1,37 @@
+{
+    "hit die": "d8",
+    "subclasses": [
+        {
+            "choice": "Arcane Trickster",
+            "weight": 1
+        },
+        {
+            "choice": "Assassin",
+            "weight": 3
+        },
+        {
+            "choice": "Inquisitive",
+            "weight": 2
+        },
+        {
+            "choice": "Mastermind",
+            "weight": 1
+        },
+        {
+            "choice": "Phantom",
+            "weight": 1
+        },
+        {
+            "choice": "Scout",
+            "weight": 2
+        },
+        {
+            "choice": "Swashbuckler",
+            "weight": 2
+        },
+        {
+            "choice": "Thief",
+            "weight": 3
+        }
+    ]
+}

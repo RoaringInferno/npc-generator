@@ -1,0 +1,45 @@
+{
+    "hit die": 6,
+    "subclasses": [
+        {
+            "choice": "Order of Scribes",
+            "weight": 1
+        },
+        {
+            "choice": "School of Abjuration",
+            "weight": 3
+        },
+        {
+            "choice": "School of Conjuration",
+            "weight": 2
+        },
+        {
+            "choice": "School of Divination",
+            "weight": 3
+        },
+        {
+            "choice": "School of Enchantment",
+            "weight": 2
+        },
+        {
+            "choice": "School of Evocation",
+            "weight": 3
+        },
+        {
+            "choice": "School of Illusion",
+            "weight": 2
+        },
+        {
+            "choice": "School of Necromancy",
+            "weight": 2
+        },
+        {
+            "choice": "School of Transmutation",
+            "weight": 2
+        },
+        {
+            "choice": "War Magic",
+            "weight": 1
+        }
+    ]
+}

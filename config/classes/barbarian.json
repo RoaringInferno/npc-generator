@@ -1,0 +1,33 @@
+{
+    "hit die": 12,
+    "subclasses": [
+        {
+            "choice": "Path of the Ancestral Guardian",
+            "weight": 1
+        },
+        {
+            "choice": "Path of the Beast",
+            "weight": 1
+        },
+        {
+            "choice": "Path of the Berserker",
+            "weight": 3
+        },
+        {
+            "choice": "Path of the Storm Herald",
+            "weight": 1
+        },
+        {
+            "choice": "Path of the Totem Warrior",
+            "weight": 3
+        },
+        {
+            "choice": "Path of Wild Magic",
+            "weight": 2
+        },
+        {
+            "choice": "Path of the Zealot",
+            "weight": 1
+        }
+    ]
+}
