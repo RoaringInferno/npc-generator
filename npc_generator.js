@@ -8,6 +8,7 @@ const eye_colors = require('./config/eye_colors.json');
 const hair_colors = require('./config/hair_colors.json');
 const classes = require('./config/classes.json');
 const professions = require('./config/professions.json');
+const skills = require('./config/skills.json');
 
 // Helper functions
 function normal(mean, stdDev) {
@@ -169,6 +170,12 @@ function generate(num) {
 
         // Select Profession
         const profession = weightedrandom(professions);
+
+        // Select Skills
+        npc_skills = [];
+        npc_skills.push(weightedrandom(skills));
+        npc_skills[0].weight = 0;
+        npc_skills.push(weightedrandom(skills));
             
         // Add record to CSV
         records.push(
@@ -196,6 +203,7 @@ function generate(num) {
                 Profession: profession.choice,
                 'Tool Proficiency': profession.tools,
                 'Hit Points': rollDie(pclass.hit_die) + getModifier(ability_scores[2]),
+                Skills: npc_skills.map(skill => skill.choice).join(", ")
             }
         );
     }
