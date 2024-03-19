@@ -1,4 +1,5 @@
 {
+    "hit die": 10,
     "subclasses": [
         {
             "choice": "Arcane Archer",

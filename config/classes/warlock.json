@@ -1,4 +1,5 @@
 {
+    "hit die": "d8",
     "subclasses": [
         {
             "choice": "The Archfey",

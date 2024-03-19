@@ -1,4 +1,5 @@
 {
+    "hit die": 12,
     "subclasses": [
         {
             "choice": "Path of the Ancestral Guardian",

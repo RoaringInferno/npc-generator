@@ -1,4 +1,5 @@
 {
+    "hit die": "d6",
     "subclasses": [
         {
             "choice": "Aberrant Mind",

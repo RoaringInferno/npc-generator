@@ -1,6 +1,6 @@
 {
     "name": "npc_generator",
-    "version": "1.2.0",
+    "version": "1.1.0",
     "description": "A tool to create bulk NPCs for your D&D game.",
     "main": "npc_generator.js",
     "scripts": {

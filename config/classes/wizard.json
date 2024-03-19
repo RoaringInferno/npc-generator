@@ -1,4 +1,5 @@
 {
+    "hit die": 6,
     "subclasses": [
         {
             "choice": "Order of Scribes",
