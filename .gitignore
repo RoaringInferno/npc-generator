@@ -1,5 +1,6 @@
 *.zip
 *.csv
 bin/
+rls/
 .DS_Store
 .vscode/
