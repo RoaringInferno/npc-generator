@@ -1,5 +1,5 @@
 {
-    "hit die": "d8",
+    "hit_die": 8,
     "subclasses": [
         {
             "choice": "The Archfey",
@@ -33,5 +33,15 @@
             "choice": "The Undying",
             "weight": 2
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Arcana",
+        "Deception",
+        "History",
+        "Intimidation",
+        "Investigation",
+        "Nature",
+        "Religion"
     ]
 }

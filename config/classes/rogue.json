@@ -1,5 +1,5 @@
 {
-    "hit die": "d8",
+    "hit_die": 8,
     "subclasses": [
         {
             "choice": "Arcane Trickster",
@@ -33,5 +33,19 @@
             "choice": "Thief",
             "weight": 3
         }
+    ],
+    "skill_count": 4,
+    "skills": [
+        "Acrobatics",
+        "Athletics",
+        "Deception",
+        "Insight",
+        "Intimidation",
+        "Investigation",
+        "Perception",
+        "Performance",
+        "Persuasion",
+        "Sleight of Hand",
+        "Stealth"
     ]
 }

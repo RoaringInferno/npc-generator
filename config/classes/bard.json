@@ -1,5 +1,5 @@
 {
-    "hit die": 8,
+    "hit_die": 8,
     "subclasses": [
         {
             "choice": "College of Creation",
@@ -29,5 +29,26 @@
             "choice": "College of Whispers",
             "weight": 1
         }
+    ],
+    "skill_count": 3,
+    "skills": [
+        "Acrobatics",
+        "Animal Handling",
+        "Arcana",
+        "Athletics",
+        "Deception",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Investigation",
+        "Medicine",
+        "Nature",
+        "Perception",
+        "Performance",
+        "Persuasion",
+        "Religion",
+        "Sleight of Hand",
+        "Stealth",
+        "Survival"
     ]
 }

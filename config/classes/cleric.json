@@ -57,5 +57,13 @@
             "choice": "War Domain",
             "weight": 1
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "History",
+        "Insight",
+        "Medicine",
+        "Persuasion",
+        "Religion"
     ]
 }

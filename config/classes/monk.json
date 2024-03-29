@@ -1,5 +1,5 @@
 {
-    "hit die": "d8",
+    "hit_die": "d8",
     "subclasses": [
         {
             "choice": "Way of Mercy",
@@ -37,5 +37,14 @@
             "choice": "Way of the Sun Soul",
             "weight": 1
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Acrobatics",
+        "Athletics",
+        "History",
+        "Insight",
+        "Religion",
+        "Stealth"
     ]
 }

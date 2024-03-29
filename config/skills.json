@@ -1,74 +1,74 @@
 [
     {
-        "choice": "Athletics",
-        "weight": 1
-    },
-    {
         "choice": "Acrobatics",
-        "weight": 1
-    },
-    {
-        "choice": "Sleight of Hand",
-        "weight": 1
-    },
-    {
-        "choice": "Stealth",
-        "weight": 1
-    },
-    {
-        "choice": "Arcana",
-        "weight": 1
-    },
-    {
-        "choice": "History",
-        "weight": 1
-    },
-    {
-        "choice": "Investigation",
-        "weight": 1
-    },
-    {
-        "choice": "Nature",
-        "weight": 1
-    },
-    {
-        "choice": "Religion",
-        "weight": 1
+        "weight": 3
     },
     {
         "choice": "Animal Handling",
-        "weight": 1
+        "weight": 2
     },
     {
-        "choice": "Insight",
-        "weight": 1
+        "choice": "Arcana",
+        "weight": 4
     },
     {
-        "choice": "Medicine",
-        "weight": 1
-    },
-    {
-        "choice": "Perception",
-        "weight": 1
-    },
-    {
-        "choice": "Survival",
-        "weight": 1
+        "choice": "Athletics",
+        "weight": 5
     },
     {
         "choice": "Deception",
-        "weight": 1
+        "weight": 2
+    },
+    {
+        "choice": "History",
+        "weight": 3
+    },
+    {
+        "choice": "Insight",
+        "weight": 4
     },
     {
         "choice": "Intimidation",
-        "weight": 1
+        "weight": 2
+    },
+    {
+        "choice": "Investigation",
+        "weight": 4
+    },
+    {
+        "choice": "Medicine",
+        "weight": 3
+    },
+    {
+        "choice": "Nature",
+        "weight": 3
+    },
+    {
+        "choice": "Perception",
+        "weight": 4
     },
     {
         "choice": "Performance",
-        "weight": 1
+        "weight": 2
     },
     {
         "choice": "Persuasion",
-        "weight": 1
+        "weight": 3
+    },
+    {
+        "choice": "Religion",
+        "weight": 3
+    },
+    {
+        "choice": "Sleight of Hand",
+        "weight": 2
+    },
+    {
+        "choice": "Stealth",
+        "weight": 4
+    },
+    {
+        "choice": "Survival",
+        "weight": 3
     }
 ]

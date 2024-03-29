@@ -1,5 +1,5 @@
 {
-    "hit die": 12,
+    "hit_die": 12,
     "subclasses": [
         {
             "choice": "Path of the Ancestral Guardian",
@@ -29,5 +29,14 @@
             "choice": "Path of the Zealot",
             "weight": 1
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Acrobatics",
+        "Athletics",
+        "Intimidation",
+        "Nature",
+        "Perception",
+        "Survival"
     ]
 }

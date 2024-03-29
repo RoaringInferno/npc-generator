@@ -1,5 +1,5 @@
 {
-    "hit die": 10,
+    "hit_die": 10,
     "subclasses": [
         {
             "choice": "Arcane Archer",
@@ -29,5 +29,16 @@
             "choice": "Samurai",
             "weight": 1
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Acrobatics",
+        "Animal Handling",
+        "Athletics",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Perception",
+        "Survival"
     ]
 }

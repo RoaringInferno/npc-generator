@@ -53,6 +53,20 @@ function unweightedrandom(choices) {
     return choices[randIndex];
 }
 
+function weightedrandomnoreplacement(choices) {
+    const totalWeight = choices.reduce((sum, { weight }) => sum + weight, 0);
+    const randNum = Math.random() * totalWeight;
+    let cumulativeWeight = 0;
+    for (let i = 0; i < choices.length; i++) {
+        cumulativeWeight += choices[i].weight;
+        if (randNum <= cumulativeWeight) {
+            const selectedChoice = choices[i];
+            choices.splice(i, 1);
+            return selectedChoice;
+        }
+    }
+}
+
 function fetchrandom(filepath) {
     const lines = fs.readFileSync(filepath, 'utf-8').split('\n');
     const randomIndex = Math.floor(Math.random() * lines.length);
@@ -98,9 +112,12 @@ function rollDie(size) {
 
 // Generate NPC data
 function generate(num) {
-    const csvWriter = createObjectCsvWriter(output.csv);
+    const csvWriter = createObjectCsvWriter({
+        path: 'output.csv',
+        header: output.header
+    });
 
-    records = [output.header];
+    records = [];
 
     for (let i = 0; i < num; i++) {
         // Select Race
@@ -178,10 +195,17 @@ function generate(num) {
         const profession = weightedrandom(professions);
 
         // Select Skills
-        npc_skills = [];
-        npc_skills.push(weightedrandom(skills));
-        npc_skills[0].weight = 0;
-        npc_skills.push(weightedrandom(skills));
+        let skill_choices = [];
+        for (const skillName of pclass.skills) {
+            const skill = skills.find(skill => skill.choice === skillName);
+            skill_choices.push(skill);
+        }
+        let npc_skills = [];
+        for (let i = 0; i <= pclass.skill_count; ++i) {
+            const skill = weightedrandomnoreplacement(skill_choices);
+            npc_skills.push(skill.choice);
+        }
+        const npc_skills_list = npc_skills.join("; ");
         
         // Select Lifestyle
         for (let i = 0; i < socioeconomic_classes.length; ++i) {
@@ -191,6 +215,9 @@ function generate(num) {
 
         // Select Income
         const income = normalDistributionPair(lifestyle.income);
+
+        // Calculate HP
+        const hp = pclass.hit_die + getModifier(ability_scores[2]);
             
         // Add record to CSV
         records.push(
@@ -217,10 +244,10 @@ function generate(num) {
                 Subclass: subclass_choice.choice,
                 Profession: profession.choice,
                 'Tool Proficiency': profession.tools,
-                Skills: npc_skills.map(skill => skill.choice).join(", "),
+                Skills: npc_skills_list,
                 Lifestyle: lifestyle.choice,
                 Income: income/100 + " gp",
-                'Hit Points': pclass.hit_die + getModifier(ability_scores[2]),
+                'Hit Points': hp,
             }
         );
     }

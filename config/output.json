@@ -1,31 +1,109 @@
 {
     "path": "output.csv",
-    "header": {
-        "Race": "Race",
-        "Subrace": "Subrace",
-        "Age": "Age",
-        "Height": "Height",
-        "Weight": "Weight",
-        "Eye Color": "Eye Color",
-        "Hair Color": "Hair Color",
-        "Gender": "Gender",
-        "First Name": "First Name",
-        "Last Name": "Last Name",
-        "Lawfulness": "Lawfulness",
-        "Kindness": "Kindness",
-        "Profession": "Profession",
-        "Tool Proficiency": "Tool Proficiency",
-        "Lifestyle": "Lifestyle",
-        "Income": "Income",
-        "Strength": "Strength",
-        "Dexterity": "Dexterity",
-        "Constitution": "Constitution",
-        "Intelligence": "Intelligence",
-        "Wisdom": "Wisdom",
-        "Charisma": "Charisma",
-        "Class": "Class",
-        "Subclass": "Subclass",
-        "Hit Points": "Hit Points",
-        "Skills": "Skills"
-    }
+    "header": [
+        {
+            "id": "Race",
+            "title": "Race"
+        },
+        {
+            "id": "Subrace",
+            "title": "Subrace"
+        },
+        {
+            "id": "Age",
+            "title": "Age"
+        },
+        {
+            "id": "Height",
+            "title": "Height"
+        },
+        {
+            "id": "Weight",
+            "title": "Weight"
+        },
+        {
+            "id": "Eye Color",
+            "title": "Eye Color"
+        },
+        {
+            "id": "Hair Color",
+            "title": "Hair Color"
+        },
+        {
+            "id": "Gender",
+            "title": "Gender"
+        },
+        {
+            "id": "First Name",
+            "title": "First Name"
+        },
+        {
+            "id": "Last Name",
+            "title": "Last Name"
+        },
+        {
+            "id": "Lawfulness",
+            "title": "Lawfulness"
+        },
+        {
+            "id": "Kindness",
+            "title": "Kindness"
+        },
+        {
+            "id": "Profession",
+            "title": "Profession"
+        },
+        {
+            "id": "Tool Proficiency",
+            "title": "Tool Proficiency"
+        },
+        {
+            "id": "Lifestyle",
+            "title": "Lifestyle"
+        },
+        {
+            "id": "Income",
+            "title": "Income"
+        },
+        {
+            "id": "Strength",
+            "title": "Strength"
+        },
+        {
+            "id": "Dexterity",
+            "title": "Dexterity"
+        },
+        {
+            "id": "Constitution",
+            "title": "Constitution"
+        },
+        {
+            "id": "Intelligence",
+            "title": "Intelligence"
+        },
+        {
+            "id": "Wisdom",
+            "title": "Wisdom"
+        },
+        {
+            "id": "Charisma",
+            "title": "Charisma"
+        },
+        {
+            "id": "Class",
+            "title": "Class"
+        },
+        {
+            "id": "Subclass",
+            "title": "Subclass"
+        },
+        {
+            "id": "Hit Points",
+            "title": "Hit Points"
+        },
+        {
+            "id": "Skills",
+            "title": "Skills"
+        }
+    ]
 }

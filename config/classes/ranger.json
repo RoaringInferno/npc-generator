@@ -1,5 +1,5 @@
 {
-    "hit die": 10,
+    "hit_die": 10,
     "subclasses": [
         {
             "choice": "Beast Master",
@@ -25,5 +25,16 @@
             "choice": "Swarmkeeper",
             "weight": 1
         }
+    ],
+    "skill_count": 3,
+    "skills": [
+        "Animal Handling",
+        "Athletics",
+        "Insight",
+        "Investigation",
+        "Nature",
+        "Perception",
+        "Stealth",
+        "Survival"
     ]
 }
