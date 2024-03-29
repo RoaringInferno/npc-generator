@@ -1,32 +1,5 @@
 {
-    "csv": {
-        "path": "output.csv",
-        "header": [
-            "Race",
-            "Subrace",
-            "Age",
-            "Height",
-            "Weight",
-            "Eye Color",
-            "Hair Color",
-            "Gender",
-            "First Name",
-            "Last Name",
-            "Lawfulness",
-            "Kindness",
-            "Profession",
-            "Tool Proficiency",
-            "Strength",
-            "Dexterity",
-            "Constitution",
-            "Intelligence",
-            "Wisdom",
-            "Charisma",
-            "Class",
-            "Subclass",
-            "Hit Points"
-        ]
-    },
+    "path": "output.csv",
     "header": {
         "Race": "Race",
         "Subrace": "Subrace",
@@ -42,6 +15,8 @@
         "Kindness": "Kindness",
         "Profession": "Profession",
         "Tool Proficiency": "Tool Proficiency",
+        "Lifestyle": "Lifestyle"
+        "Income": "Income",
         "Strength": "Strength",
         "Dexterity": "Dexterity",
         "Constitution": "Constitution",

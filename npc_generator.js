@@ -8,6 +8,7 @@ const eye_colors = require('./config/eye_colors.json');
 const hair_colors = require('./config/hair_colors.json');
 const classes = require('./config/classes.json');
 const professions = require('./config/professions.json');
+const socioeconomic_classes = require('./config/socioeconomic_classes.json');
 
 // Helper functions
 function normal(mean, stdDev) {
@@ -28,6 +29,10 @@ function normalDistribution(minVal, maxVal) {
             return value;
         }
     }
+}
+
+function normalDistributionPair(pair) {
+    return normalDistribution(pair[0], pair[1]);
 }
 
 function weightedrandom(choices) {
@@ -95,6 +100,7 @@ function generate(num) {
     const csvWriter = createObjectCsvWriter(output.csv);
 
     records = [output.header];
+
     for (let i = 0; i < num; i++) {
         // Select Race
         const race_choice = weightedrandom(races);
@@ -106,15 +112,15 @@ function generate(num) {
         const subrace = weightedrandom(race.subraces);
 
         // Select Age
-        const age = normalDistribution(race.age[0], race.age[1]);
+        const age = normalDistributionPair(race.age);
 
         // Select Height
-        const height = normalDistribution(race.height[0], race.height[1]);
+        const height = normalDistributionPair(race.height);
         const height_string = Math.floor(height / 12) + "'" + height % 12;
         //console.log(height_string); // debug_print
 
         // Select Weight
-        const weight = normalDistribution(race.weights[0], race.weights[1]);
+        const weight = normalDistributionPair(race.weights);
 
         // Select Eye Color
         const eye_color = weightedrandom(eye_colors);
@@ -169,6 +175,15 @@ function generate(num) {
 
         // Select Profession
         const profession = weightedrandom(professions);
+
+        // Select Lifestyle
+        for (let i = 0; i < socioeconomic_classes.length; ++i) {
+            socioeconomic_classes[i].weight += profession.lifestyle[i] * profession.impact;
+        }
+        const lifestyle = weightedrandom(socioeconomic_classes);
+
+        // Select Income
+        const income = normalDistributionPair(lifestyle.income);
             
         // Add record to CSV
         records.push(
@@ -195,7 +210,9 @@ function generate(num) {
                 Subclass: subclass_choice.choice,
                 Profession: profession.choice,
                 'Tool Proficiency': profession.tools,
-                'Hit Points': rollDie(pclass.hit_die) + getModifier(ability_scores[2]),
+                Lifestyle: lifestyle.choice,
+                Income: income/100 + " gp",
+                'Hit Points': pclass.hit_die + getModifier(ability_scores[2]),
             }
         );
     }

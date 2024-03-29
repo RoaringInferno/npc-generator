@@ -2,86 +2,120 @@
     {
         "choice": "Alchemist",
         "weight": 1,
-        "tools": "Alchemist's supplies"
+        "tools": "Alchemist's supplies",
+        "impact": 10,
+        "lifestyle": [0, 2, 4, 5, 6]
     },
     {
         "choice": "Brewer",
         "weight": 2,
-        "tools": "Brewer's supplies"
+        "tools": "Brewer's supplies",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Calligrapher",
         "weight": 1,
-        "tools": "Calligrapher's supplies"
+        "tools": "Calligrapher's supplies",
+        "impact": 15,
+        "lifestyle": [0, 1, 3, 4, 5]
     },
     {
         "choice": "Carpenter",
         "weight": 3,
-        "tools": "Carpenter's tools"
+        "tools": "Carpenter's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Cartographer",
         "weight": 1,
-        "tools": "Cartographer's tools"
+        "tools": "Cartographer's tools",
+        "impact": 6,
+        "lifestyle": [0, 1, 3, 4, 5]
     },
     {
         "choice": "Cobbler",
         "weight": 3,
-        "tools": "Cobbler's tools"
+        "tools": "Cobbler's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Cook",
         "weight": 3,
-        "tools": "Cook's utensils"
+        "tools": "Cook's utensils",
+        "impact": 5,
+        "lifestyle": [0, 1, 2, 2, 1]
     },
     {
         "choice": "Glassblower",
         "weight": 1,
-        "tools": "Glassblower's tools"
+        "tools": "Glassblower's tools",
+        "impact": 10,
+        "lifestyle": [0, 2, 4, 0, 0]
     },
     {
         "choice": "Jeweler",
         "weight": 1,
-        "tools": "Jeweler's tools"
+        "tools": "Jeweler's tools",
+        "impact": 15,
+        "lifestyle": [0, 1, 2, 3, 1]
     },
     {
         "choice": "Leatherworker",
         "weight": 3,
-        "tools": "Leatherworker's tools"
+        "tools": "Leatherworker's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Mason",
         "weight": 4,
-        "tools": "Mason's tools"
+        "tools": "Mason's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Painter",
         "weight": 1,
-        "tools": "Painter's supplies"
+        "tools": "Painter's supplies",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Potter",
         "weight": 2,
-        "tools": "Potter's tools"
+        "tools": "Potter's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Smith",
         "weight": 3,
-        "tools": "Smith's tools"
+        "tools": "Smith's tools",
+        "impact": 5,
+        "lifestyle": [0, 2, 3, 0, 0]
     },
     {
         "choice": "Tinker",
         "weight": 1,
-        "tools": "Tinker's tools"
+        "tools": "Tinker's tools",
+        "impact": 7,
+        "lifestyle": [0, 1, 2, 2, 1]
     },
     {
         "choice": "Weaver",
         "weight": 3,
-        "tools": "Weaver's tools"
+        "tools": "Weaver's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     },
     {
         "choice": "Woodcarver",
         "weight": 2,
-        "tools": "Woodcarver's tools"
+        "tools": "Woodcarver's tools",
+        "impact": 0,
+        "lifestyle": [0, 0, 0, 0, 0]
     }
 ]
