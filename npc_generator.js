@@ -2,14 +2,12 @@ const createObjectCsvWriter = require('csv-writer').createObjectCsvWriter;
 const fs = require('fs');
 
 // Data
-const races = require('./config/races.json');
-const output = require('./config/output.json');;
-const eye_colors = require('./config/eye_colors.json');
-const hair_colors = require('./config/hair_colors.json');
-const classes = require('./config/classes.json');
-const professions = require('./config/professions.json');
-const skills = require('./config/skills.json');
-const socioeconomic_classes = require('./config/socioeconomic_classes.json');
+async function loadJSON(filepath) {
+    const file = await fs.promises.readFile(__dirname + filepath, 'utf8');
+    const data = await JSON.parse(file);
+    //console.log(data);
+    return data;
+}
 
 // Helper functions
 function normal(mean, stdDev) {
@@ -36,8 +34,12 @@ function normalDistributionPair(pair) {
     return normalDistribution(pair[0], pair[1]);
 }
 
-function weightedrandom(choices) {
-    const totalWeight = choices.reduce((sum, { weight }) => sum + weight, 0);
+function weightedrandom(_choices) {
+    choices = _choices;
+    let totalWeight = 0;
+    for (const choice of choices) {
+        totalWeight += choice.weight || 0;
+    }
     const randNum = Math.random() * totalWeight;
     let cumulativeWeight = 0;
     for (const choice of choices) {
@@ -54,7 +56,10 @@ function unweightedrandom(choices) {
 }
 
 function weightedrandomnoreplacement(choices) {
-    const totalWeight = choices.reduce((sum, { weight }) => sum + weight, 0);
+    let totalWeight = 0;
+    for (let i = 0; i < choices.length; i++) {
+        totalWeight += choices[i].weight || 0;
+    }
     const randNum = Math.random() * totalWeight;
     let cumulativeWeight = 0;
     for (let i = 0; i < choices.length; i++) {
@@ -68,7 +73,7 @@ function weightedrandomnoreplacement(choices) {
 }
 
 function fetchrandom(filepath) {
-    const lines = fs.readFileSync(filepath, 'utf-8').split('\n');
+    const lines = fs.readFileSync(__dirname + filepath, 'utf-8').split('\n');
     const randomIndex = Math.floor(Math.random() * lines.length);
     return lines[randomIndex];
 }
@@ -111,7 +116,19 @@ function rollDie(size) {
 
 
 // Generate NPC data
-function generate(num) {
+async function generate(num) {
+    // Load Data
+    const races = await loadJSON('/config/races.json');
+    const output = await loadJSON('/config/output.json');
+    const eye_colors = await loadJSON('/config/eye_colors.json');
+    const hair_colors = await loadJSON('/config/hair_colors.json');
+    const classes = await loadJSON('/config/classes.json');
+    const professions = await loadJSON('/config/professions.json');
+    const skills = await loadJSON('/config/skills.json');
+    const socioeconomic_classes = await loadJSON('/config/socioeconomic_classes.json');
+
+    // Load Extended Data
+
     const csvWriter = createObjectCsvWriter({
         path: 'output.csv',
         header: output.header
@@ -121,8 +138,8 @@ function generate(num) {
 
     for (let i = 0; i < num; i++) {
         // Select Race
-        const race_choice = weightedrandom(races);
-        const race = require("./config/races/" + race_choice.file + ".json");
+        const race_choice = await weightedrandom(races);
+        const race = await loadJSON("/config/races/" + race_choice.file + ".json");
 
         //console.log(race); // debug_print
 
@@ -150,8 +167,8 @@ function generate(num) {
         const gender = Math.random() < 0.5 ? "Male" : "Female";
 
         // Select Name
-        const first_name = fetchrandom("./names/" + race.name_file + (gender == "Male" ? "m" : "f") + ".txt");
-        const last_name = fetchrandom("./names/surname.txt");
+        const first_name = fetchrandom("/names/" + race.name_file + (gender == "Male" ? "m" : "f") + ".txt");
+        const last_name = fetchrandom("/names/surname.txt");
 
         // Select Alignment
         const meanLawfulness = (race.alignment[0][0] + race.alignment[0][1]) / 2 ;
@@ -184,7 +201,7 @@ function generate(num) {
             c.weight = Math.max(c.weight, 1);
         }
         const class_choice = weightedrandom(classes);
-        const pclass = require("./config/classes/" + class_choice.file + ".json");
+        const pclass = await loadJSON("/config/classes/" + class_choice.file + ".json");
 
         //console.log(class_choice); // debug_print
 
