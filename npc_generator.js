@@ -146,6 +146,22 @@ async function generate(num) {
         }
     }
 
+    // Load Names
+    const names = [];
+    const nameFiles = fs.readdirSync(__dirname + "/names");
+    for (const file of nameFiles) {
+        if (file.endsWith('.txt')) {
+            const filename = file.replace('.txt', '');
+            const filePath = "/names/" + file;
+            const lines = fs.readFileSync(__dirname + filePath, 'utf-8').split('\n');
+            names.push({
+                filename: filename,
+                names: lines
+            });
+        }
+    }
+    
+
     const csvWriter = createObjectCsvWriter({
         path: 'output.csv',
         header: Output.header
@@ -183,8 +199,8 @@ async function generate(num) {
         const gender = Math.random() < 0.5 ? "Male" : "Female";
 
         // Select Name
-        const first_name = fetchrandom("/names/" + race.name_file + (gender == "Male" ? "m" : "f") + ".txt");
-        const last_name = fetchrandom("/names/surname.txt");
+        const first_name = unweightedrandom(names.find(n => n.filename == (race.name_file + (gender == "Male" ? "m" : "f"))).names);
+        const last_name = unweightedrandom(names.find(n => n.filename == "surname").names);
 
         // Select Alignment
         const meanLawfulness = (race.alignment[0][0] + race.alignment[0][1]) / 2 ;
