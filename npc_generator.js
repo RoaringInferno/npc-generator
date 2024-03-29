@@ -5,7 +5,7 @@ const fs = require('fs');
 async function loadJSON(filepath) {
     const file = await fs.promises.readFile(__dirname + filepath, 'utf8');
     const data = await JSON.parse(file);
-    //console.log(data);
+    //gconsole.log(data);
     return data;
 }
 
@@ -118,28 +118,44 @@ function rollDie(size) {
 // Generate NPC data
 async function generate(num) {
     // Load Data
-    const races = await loadJSON('/config/races.json');
-    const output = await loadJSON('/config/output.json');
-    const eye_colors = await loadJSON('/config/eye_colors.json');
-    const hair_colors = await loadJSON('/config/hair_colors.json');
-    const classes = await loadJSON('/config/classes.json');
-    const professions = await loadJSON('/config/professions.json');
-    const skills = await loadJSON('/config/skills.json');
-    const socioeconomic_classes = await loadJSON('/config/socioeconomic_classes.json');
+    const Output = await loadJSON('/config/output.json');
+    const EyeColors = await loadJSON('/config/eye_colors.json');
+    const HairColors = await loadJSON('/config/hair_colors.json');
+    const Professions = await loadJSON('/config/professions.json');
+    const Skills = await loadJSON('/config/skills.json');
+    const Lifestyles = await loadJSON('/config/lifestyles.json');
 
     // Load Extended Data
+    // Load Races
+    const races = [];
+    const raceFiles = fs.readdirSync(__dirname + "/config/races");
+    for (const file of raceFiles) {
+        if (file.endsWith('.json')) {
+            const raceData = await loadJSON("/config/races/" + file);
+            races.push(raceData);
+        }
+    }
+
+    // Load Classes
+    const classes = [];
+    const classFiles = fs.readdirSync(__dirname + "/config/classes");
+    for (const file of classFiles) {
+        if (file.endsWith('.json')) {
+            const classData = await loadJSON("/config/classes/" + file);
+            classes.push(classData);
+        }
+    }
 
     const csvWriter = createObjectCsvWriter({
         path: 'output.csv',
-        header: output.header
+        header: Output.header
     });
 
     records = [];
 
     for (let i = 0; i < num; i++) {
         // Select Race
-        const race_choice = await weightedrandom(races);
-        const race = await loadJSON("/config/races/" + race_choice.file + ".json");
+        const race = await weightedrandom(races);
 
         //console.log(race); // debug_print
 
@@ -158,10 +174,10 @@ async function generate(num) {
         const weight = normalDistributionPair(race.weights);
 
         // Select Eye Color
-        const eye_color = weightedrandom(eye_colors);
+        const eye_color = weightedrandom(EyeColors);
 
         // Select Hair Color
-        const hair_color = weightedrandom(hair_colors);
+        const hair_color = weightedrandom(HairColors);
 
         // Select Gender
         const gender = Math.random() < 0.5 ? "Male" : "Female";
@@ -194,52 +210,65 @@ async function generate(num) {
         ];
 
         // Select Class
+        const modifiedClasses = [];
         for (const c of classes) {
+            const modifiedClass = {
+                weight: c.weight,
+                choice: c.choice
+            };
             for (let i = 0; i < 5; ++i) {
-                c.weight += c.ability_score_weights[i] * (ability_scores[i]-10);
-            }
-            c.weight = Math.max(c.weight, 1);
-        }
-        const class_choice = weightedrandom(classes);
-        const pclass = await loadJSON("/config/classes/" + class_choice.file + ".json");
+                modifiedClass.weight += c.ability_score_weights[i] * (ability_scores[i]-10);
+            };
+            modifiedClass.weight = Math.max(modifiedClass.weight, 1);
+            modifiedClasses.push(modifiedClass);
+        };
+        const class_choice = weightedrandom(modifiedClasses);
+        const npc_class = classes.find(c => c.choice === class_choice.choice);
 
         //console.log(class_choice); // debug_print
 
         //     Select Subclass
-        const subclass_choice = weightedrandom(pclass.subclasses);
+        const npc_subclass = weightedrandom(npc_class.subclasses);
 
         // Select Profession
-        const profession = weightedrandom(professions);
+        const profession = weightedrandom(Professions);
 
         // Select Skills
         let skill_choices = [];
-        for (const skillName of pclass.skills) {
-            const skill = skills.find(skill => skill.choice === skillName);
+        for (const skillName of npc_class.skills) {
+            const skill = Skills.find(skill => skill.choice === skillName);
             skill_choices.push(skill);
         }
         let npc_skills = [];
-        for (let i = 0; i <= pclass.skill_count; ++i) {
+        for (let i = 0; i <= npc_class.skill_count; ++i) {
             const skill = weightedrandomnoreplacement(skill_choices);
             npc_skills.push(skill.choice);
         }
         const npc_skills_list = npc_skills.join("; ");
         
         // Select Lifestyle
-        for (let i = 0; i < socioeconomic_classes.length; ++i) {
-            socioeconomic_classes[i].weight += profession.lifestyle[i] * profession.impact;
+        const modifiedLifestyles = [];
+        for (let i = 0; i < Lifestyles.length; ++i) {
+            const modifiedLifestyle = {
+                weight: Lifestyles[i].weight,
+                choice: Lifestyles[i].choice
+            };
+            modifiedLifestyle.weight += profession.lifestyle[i] * profession.impact;
+            modifiedLifestyles.push(modifiedLifestyle);
         }
-        const lifestyle = weightedrandom(socioeconomic_classes);
+        const modifiedLifestyle = weightedrandom(modifiedLifestyles);
+        const lifestyle = Lifestyles.find(l => l.choice === modifiedLifestyle.choice);
 
         // Select Income
         const income = normalDistributionPair(lifestyle.income);
 
         // Calculate HP
-        const hp = pclass.hit_die + getModifier(ability_scores[2]);
+        const hp = npc_class.hit_die + getModifier(ability_scores[2]);
             
         // Add record to CSV
         records.push(
             {
-                Race: race_choice.choice,
+                Race: race.choice,
                 Subrace: subrace.choice,
                 Age: age.toString() + " yrs",
                 Height: height_string,
@@ -257,8 +286,8 @@ async function generate(num) {
                 Intelligence: (ability_scores[3] - 2).toString() + " (" + getModifierForDisplay(ability_scores[3]) + ")",
                 Wisdom: (ability_scores[4] - 2).toString() + " (" + getModifierForDisplay(ability_scores[4]) + ")",
                 Charisma: (ability_scores[5] - 2).toString() + " (" + getModifierForDisplay(ability_scores[5]) + ")",
-                Class: class_choice.choice,
-                Subclass: subclass_choice.choice,
+                Class: npc_class.choice,
+                Subclass: npc_subclass.choice,
                 Profession: profession.choice,
                 'Tool Proficiency': profession.tools,
                 Skills: npc_skills_list,

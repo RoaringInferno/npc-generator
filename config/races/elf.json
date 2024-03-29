@@ -1,4 +1,6 @@
 {
+    "choice": "Elf", 
+    "weight": 21, 
     "subraces": [
         {
             "choice": "High",

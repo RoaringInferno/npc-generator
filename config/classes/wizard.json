@@ -1,4 +1,9 @@
 {
+    "choice": "Wizard",
+    "ability_score_weights": [
+        0, 0, 0, 4, 0, 0
+    ],
+    "weight": 0,
     "hit_die": 6,
     "subclasses": [
         {

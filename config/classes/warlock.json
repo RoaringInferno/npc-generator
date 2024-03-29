@@ -1,4 +1,9 @@
 {
+    "choice": "Warlock",
+    "ability_score_weights": [
+        0, 0, 0, 0, 0, 4
+    ],
+    "weight": 0,
     "hit_die": 8,
     "subclasses": [
         {

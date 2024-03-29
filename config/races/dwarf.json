@@ -1,4 +1,6 @@
 {
+    "choice": "Dwarf",
+    "weight": 17,
     "subraces": [
         {
             "choice": "Hill",

@@ -1,4 +1,6 @@
 {
+    "choice": "Gnome", 
+    "weight": 10,
     "subraces": [
         {
             "choice": "Forest",

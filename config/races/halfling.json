@@ -1,4 +1,6 @@
 {
+    "choice": "Halfling", 
+    "weight": 16, 
     "subraces": [
         {
             "choice": "Lightfoot",

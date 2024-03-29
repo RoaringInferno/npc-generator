@@ -1,4 +1,9 @@
 {
+    "choice": "Monk",
+    "ability_score_weights": [
+        0, 3, 0, 0, 3, 0
+    ],
+    "weight": 0,
     "hit_die": "d8",
     "subclasses": [
         {

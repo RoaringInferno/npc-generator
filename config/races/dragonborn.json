@@ -1,4 +1,6 @@
 {
+    "choice": "Dragonborn",
+    "weight": 4,
     "subraces": [
         {
             "choice": "Black",

@@ -1,4 +1,9 @@
 {
+    "choice": "Paladin",
+    "ability_score_weights": [
+        2, 0, 1, 0, 0, 3
+    ],
+    "weight": 0,
     "hit_die": 10,
     "subclasses": [
         {

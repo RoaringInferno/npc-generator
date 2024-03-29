@@ -1,4 +1,6 @@
 {
+    "choice": "Half-Orc", 
+    "weight": 4, 
     "subraces": [
         {
             "choice": "",

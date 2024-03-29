@@ -1,4 +1,6 @@
 {
+    "choice": "Human", 
+    "weight": 20, 
     "subraces": [
         {
             "choice": "",
