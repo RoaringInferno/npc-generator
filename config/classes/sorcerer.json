@@ -1,0 +1,33 @@
+{
+    "hit die": "d6",
+    "subclasses": [
+        {
+            "choice": "Aberrant Mind",
+            "weight": 1
+        },
+        {
+            "choice": "Clockwork Soul",
+            "weight": 1
+        },
+        {
+            "choice": "Divine Soul",
+            "weight": 1
+        },
+        {
+            "choice": "Draconic Bloodline",
+            "weight": 3
+        },
+        {
+            "choice": "Shadow Magic",
+            "weight": 1
+        },
+        {
+            "choice": "Storm Sorcery",
+            "weight": 1
+        },
+        {
+            "choice": "Wild Magic",
+            "weight": 3
+        }
+    ]
+}

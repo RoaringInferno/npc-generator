@@ -1,0 +1,29 @@
+{
+    "hit die": 10,
+    "subclasses": [
+        {
+            "choice": "Beast Master",
+            "weight": 3
+        },
+        {
+            "choice": "Gloom Stalker",
+            "weight": 1
+        },
+        {
+            "choice": "Horizon Walker",
+            "weight": 1
+        },
+        {
+            "choice": "Hunter",
+            "weight": 3
+        },
+        {
+            "choice": "Monster Slayer",
+            "weight": 2
+        },
+        {
+            "choice": "Swarmkeeper",
+            "weight": 1
+        }
+    ]
+}

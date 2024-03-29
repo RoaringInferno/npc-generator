@@ -1,0 +1,37 @@
+{
+    "hit die": "d8",
+    "subclasses": [
+        {
+            "choice": "The Archfey",
+            "weight": 1
+        },
+        {
+            "choice": "The Celestial",
+            "weight": 1
+        },
+        {
+            "choice": "The Fathomless",
+            "weight": 1
+        },
+        {
+            "choice": "The Fiend",
+            "weight": 3
+        },
+        {
+            "choice": "The Genie",
+            "weight": 1
+        },
+        {
+            "choice": "The Great Old One",
+            "weight": 2
+        },
+        {
+            "choice": "The Hexblade",
+            "weight": 1
+        },
+        {
+            "choice": "The Undying",
+            "weight": 2
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "hit die": "d8",
+    "subclasses": [
+        {
+            "choice": "Way of Mercy",
+            "weight": 2
+        },
+        {
+            "choice": "Way of the Astral Self",
+            "weight": 1
+        },
+        {
+            "choice": "Way of the Drunken Master",
+            "weight": 2
+        },
+        {
+            "choice": "Way of the Four Elements",
+            "weight": 1
+        },
+        {
+            "choice": "Way of the Kensei",
+            "weight": 3
+        },
+        {
+            "choice": "Way of the Long Death",
+            "weight": 1
+        },
+        {
+            "choice": "Way of the Open Hand",
+            "weight": 3
+        },
+        {
+            "choice": "Way of the Shadow",
+            "weight": 2
+        },
+        {
+            "choice": "Way of the Sun Soul",
+            "weight": 1
+        }
+    ]
+}
