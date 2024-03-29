@@ -1,5 +1,5 @@
 {
-    "hit die": 6,
+    "hit_die": 6,
     "subclasses": [
         {
             "choice": "Order of Scribes",
@@ -41,5 +41,15 @@
             "choice": "War Magic",
             "weight": 1
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Arcana",
+        "Athletics",
+        "History",
+        "Insight",
+        "Investigation",
+        "Medicine",
+        "Religion"
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "hit die": "d6",
+    "hit_die": 6,
     "subclasses": [
         {
             "choice": "Aberrant Mind",
@@ -29,5 +29,14 @@
             "choice": "Wild Magic",
             "weight": 3
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Arcana",
+        "Deception",
+        "Insight",
+        "Intimidation",
+        "Persuasion",
+        "Religion"
     ]
 }

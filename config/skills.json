@@ -1,0 +1,74 @@
+[
+    {
+        "choice": "Acrobatics",
+        "weight": 3
+    },
+    {
+        "choice": "Animal Handling",
+        "weight": 2
+    },
+    {
+        "choice": "Arcana",
+        "weight": 4
+    },
+    {
+        "choice": "Athletics",
+        "weight": 5
+    },
+    {
+        "choice": "Deception",
+        "weight": 2
+    },
+    {
+        "choice": "History",
+        "weight": 3
+    },
+    {
+        "choice": "Insight",
+        "weight": 4
+    },
+    {
+        "choice": "Intimidation",
+        "weight": 2
+    },
+    {
+        "choice": "Investigation",
+        "weight": 4
+    },
+    {
+        "choice": "Medicine",
+        "weight": 3
+    },
+    {
+        "choice": "Nature",
+        "weight": 3
+    },
+    {
+        "choice": "Perception",
+        "weight": 4
+    },
+    {
+        "choice": "Performance",
+        "weight": 2
+    },
+    {
+        "choice": "Persuasion",
+        "weight": 3
+    },
+    {
+        "choice": "Religion",
+        "weight": 3
+    },
+    {
+        "choice": "Sleight of Hand",
+        "weight": 2
+    },
+    {
+        "choice": "Stealth",
+        "weight": 4
+    },
+    {
+        "choice": "Survival",
+        "weight": 3
+    }
+]

@@ -1,5 +1,5 @@
 {
-    "hit die": 10,
+    "hit_die": 10,
     "subclasses": [
         {
             "choice": "Oath of the Ancients",
@@ -29,5 +29,14 @@
             "choice": "Oath of Vengeance",
             "weight": 3
         }
+    ],
+    "skill_count": 2,
+    "skills": [
+        "Athletics",
+        "Insight",
+        "Intimidation",
+        "Medicine",
+        "Persuasion",
+        "Religion"
     ]
 }
