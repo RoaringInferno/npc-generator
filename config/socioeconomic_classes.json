@@ -1,0 +1,27 @@
+[
+    {
+        "choice": "Poor",
+        "weight": 80,
+        "income": [40, 200]
+    },
+    {
+        "choice": "Modest",
+        "weight": 10,
+        "income": [200, 400]
+    },
+    {
+        "choice": "Comfortable",
+        "weight": 5,
+        "income": [400, 800]
+    },
+    {
+        "choice": "Wealthy",
+        "weight": 4,
+        "income": [800, 2000]
+    },
+    {
+        "choice": "Aristocratic",
+        "weight": 1,
+        "income": [2000, 4000]
+    }
+]
