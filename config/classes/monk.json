@@ -4,7 +4,7 @@
         0, 3, 0, 0, 3, 0
     ],
     "weight": 0,
-    "hit_die": "d8",
+    "hit_die": 8,
     "subclasses": [
         {
             "choice": "Way of Mercy",
